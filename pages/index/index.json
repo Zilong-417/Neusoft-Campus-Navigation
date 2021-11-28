@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "custom-swiper": "../swiper/swiper"
+  },
+
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#40E0D0",
+    "navigationBarTitleText": "活在东软",
+    "navigationBarTextStyle":"white"
+  
+}

@@ -1,0 +1,40 @@
+/**index.wxss**/
+.place_container{
+  padding: 10rpx;
+  height: 100rpx;
+  margin-left: 2%;
+  width: 93%;
+  display: flex;
+  flex-flow: row;
+  background-color: #F0F8FF;
+  border-radius: 10rpx;
+  z-index: 1;
+  box-shadow: 10rpx 5px 40rpx rgba(0, 0, 0,0.1);
+  border:3rpx solid	#DCDCDC ;
+}
+.single_place{
+  width: 30%;
+  flex-direction: column;
+}
+.place_style{
+  width: 35%;
+  height: 50rpx;
+  margin-left: 35%;
+  display: flex;
+  margin-top: 10rpx;
+}
+.place_text{
+  display: flex;
+  font-size: 20rpx;
+  justify-content: center;
+  margin-top: 10rpx;
+
+}
+/*地图*/
+.map{
+    width: 96%;
+    height: 800rpx;
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: #F0F8FF;
+}
