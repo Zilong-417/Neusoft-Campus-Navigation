@@ -1,7 +1,8 @@
 {
   "usingComponents": {},
-  "backgroundTextStyle":"light",
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#40E0D0",
-    "navigationBarTitleText": "个人中心",
+    "navigationBarTitleText": "发表吐槽",
     "navigationBarTextStyle":"white"
+
 }

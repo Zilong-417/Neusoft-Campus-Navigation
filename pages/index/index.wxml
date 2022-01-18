@@ -1,56 +1,44 @@
 <!--pages/index/index.wxml-->
 <!--轮播图-->
-<custom-swiper imgUrls="{{carouselImgUrls}}" /> 
+<custom-swiper imgUrls="{{carouselImgUrls}}" />
 <!--菜单栏-->
 <view class="place_container">
-        <view class="single_place"bindtap="dormitory" >
-            <image class="place_style" src="../../images/dorm_icon.png"></image>
-            <view class="place_text">住宿</view>
-        </view>
-        <view class="single_place"bindtap="study" >
-            <image class="place_style" src="../../images/study_icon.png"></image>
-            <view class="place_text">学习</view>
-        </view>
-        <view class="single_place"bindtap="eat" >
-            <image class="place_style" src="../../images/play_icon.png"></image>
-            <view class="place_text">美食</view>
-        </view>
-      <view class="single_place"bindtap="play" >
-          <image class="place_style" src="../../images/eat_icon.png"></image>
-          <view class="place_text">服务</view>
-      </view>
-      <view class="single_place"bindtap="transport" >
-          <image class="place_style" src="../../images/transport_icon.png"></image>
-          <view class="place_text">交通</view>
-      </view>
-      <view class="single_place"bindtap="sport" >
-          <image class="place_style" src="../../images/sport_icon.png"></image>
-          <view class="place_text">运动</view>
-      </view>
+    <view class="single_place" bindtap="dormitory">
+        <image class="place_style" src="../../images/dorm_icon.png"></image>
+        <view class="place_text">住宿</view>
+    </view>
+    <view class="single_place" bindtap="study">
+        <image class="place_style" src="../../images/study_icon.png"></image>
+        <view class="place_text">学习</view>
+    </view>
+    <view class="single_place" bindtap="eat">
+        <image class="place_style" src="../../images/play_icon.png"></image>
+        <view class="place_text">美食</view>
+    </view>
+    <view class="single_place" bindtap="play">
+        <image class="place_style" src="../../images/eat_icon.png"></image>
+        <view class="place_text">服务</view>
+    </view>
+    <view class="single_place" bindtap="transport">
+        <image class="place_style" src="../../images/transport_icon.png"></image>
+        <view class="place_text">交通</view>
+    </view>
+    <view class="single_place" bindtap="sport">
+        <image class="place_style" src="../../images/sport_icon.png"></image>
+        <view class="place_text">运动</view>
+    </view>
 </view>
 <!--地图-->
 <view class="map">
-    <map 
-    id="myMap"
-    style="width:100%;height:1000rpx;"
-    markers="{{markers}}"
-    data-markers="{{markers}}"
-    scale="17"
-    show-compass="true"
-    enable-rotate="true"
-    enable-building="true"
-    bindmarkertap="onPointTap"
-    bindlabeltap="onPointTap"
-    subkey="VDUBZ-LMOEX-Y7J4V-TIIKL-U2H62-JLFGY"
-    layer-style="2"
-    latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}"
-    ></map>
+    <map id="myMap" style="width:100%;height:1000rpx;" markers="{{markers}}" data-markers="{{markers}}" scale="16" show-compass="true" enable-rotate="true" enable-building="true" bindmarkertap="onPointTap" bindlabeltap="onPointTap" subkey="VDUBZ-LMOEX-Y7J4V-TIIKL-U2H62-JLFGY" layer-style="1" latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}">
+
+    </map>
 </view>
 <!--弹窗-->
 <modal class="model" hidden="{{hidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalconfirm" bindcancel="modalcancel" title="前往此处" style="width:80%">
-  <view class="model-name">{{modalname}}</view>
-  <view class="model-name">{{modaladdress}}</view>
+    <view class="modal_box" catchtap="mycollect" data-id="{{item._id}}">
+        <view class="model-name">{{modalname}}</view>
+        <image class="image_size" data-text="{{modalname}}" src="../../images/selected.png"></image>
+    </view>
+    <view class="model-name">{{modaladdress}}</view>
 </modal>
-<!--弹出框结束-->
-
-

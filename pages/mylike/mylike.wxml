@@ -1,12 +1,7 @@
-<!--pages/comment/comment.wxml-->
+<!--pages/mylike/mylike.wxml-->
 <!--可滚动视图区域-->
 <scroll-view class="tucao" scroll-y="true">
-      <!--悬浮发布按钮-->
-      <view bindtap="go_publish">
-            <image class="publish_image" src="../../images/publish.png"></image>
-      </view>
-      <!--评论区-->
-      <block wx:for="{{mess_list}}" wx:key="index">
+      <block wx:for="{{mylike_list}}" wx:key="index">
             <view class="box">
                   <view class="first_box">
                         <view class="touxiang_box">
@@ -20,9 +15,8 @@
                                     <text class="showtime">{{item.time}}</text>
                               </view>
                         </view>
-                        <view class="like_box" catchtap="prizeaction" data-id="{{item._id}}">
-                              <text class="num">{{item.prizelist.length>0?item.prizelist.length:''}}</text>
-                              <image class="like" src="{{item.isPrize?'/images/like_selected.png':'/images/like.png'}}"></image>
+                        <view class="like_box" catchtap="mylike_deleteaction" data-id="{{item._id}}">
+                              <image class="like" src="../../images/dellike.png"></image>
                         </view>
                   </view>
                   <view class="second_box">

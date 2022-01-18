@@ -1,4 +1,7 @@
 /**index.wxss**/
+page{
+  background-color: #E0FFFF;
+}
 .place_container{
   padding: 10rpx;
   height: 100rpx;
@@ -25,7 +28,7 @@
 }
 .place_text{
   display: flex;
-  font-size: 20rpx;
+  font-size: 25rpx;
   justify-content: center;
   margin-top: 10rpx;
 
@@ -37,4 +40,15 @@
     margin-left: 2%;
     margin-top: 2%;
     background-color: #F0F8FF;
+}
+.modal_box{
+  display: flex;
+}
+.model-name{
+  width: 100%;
+  height: 50rpx;
+}
+.image_size{
+  width: 60rpx;
+  height: 60rpx;
 }

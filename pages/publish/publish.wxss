@@ -1,0 +1,43 @@
+page{
+  background-color: #E0FFFF;
+}
+.publish_title{
+  height: 50rpx;
+  width: 50%;
+  font-size: 40rpx;
+  margin: 40rpx;
+
+}
+.textarea{
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  border-radius: 10rpx;
+  background-color: #fff;
+  border: solid 3rpx	#87CECB;
+}
+
+.textinput{
+  width: 96%;
+  height: 500rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 38rpx;
+}
+
+.click{
+  width: 84%;
+  height: 90rpx;
+  padding-top: 20rpx;
+  border-radius: 10rpx;
+  margin: auto;
+  margin-top: 70rpx;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #009FCC;
+  text-align: center;
+  color: white;
+  font-size: 33rpx;
+}

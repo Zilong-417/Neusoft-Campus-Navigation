@@ -1,0 +1,19 @@
+<!--pages/mycollect/mycollect.wxml-->
+<scroll-view class="shoucang" scroll-y="true">
+  <block wx:for="{{mycollectlist}}" wx:for-item="item" >
+    <view class="box">
+      <view class="first_box">
+        <image class="imge_size" src="../../images/address.png"></image>
+        <text clss="text_size" >{{item.addressname}}</text>
+      </view>
+      <view class="second_box">
+        <image class="imge_size" src="../../images/address2.png"></image>
+        <text clss="text_size">{{item.modaladdress}}</text>
+      </view>
+      <view class="third_box">
+        <view class="btn" bindtap="delete_collect" data-text="{{item.addressname}}">删除</view>
+        <view class="btn" bindtap="goaddress" data-text="{{item.addressname}}">前往</view>
+      </view>
+    </view>
+  </block>
+</scroll-view>

@@ -1,0 +1,5 @@
+<view class="publish_title">吐槽内容</view>
+<view class='textarea'>
+   <textarea placeholder="快来吐槽吧" placeholder-style="color:#888888; font-size:38rpx;" class='textinput' maxlength='-1' bindinput ="getvalue"></textarea>
+</view>
+<button id='btn' class='click' bindtap='submitData' disabled="{{isdisable}}">发送</button>

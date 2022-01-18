@@ -1,0 +1,109 @@
+/* pages/myinfo/myinfo.wxss */
+page {
+  background-color: #E0FFFF;
+}
+
+.image_continer {
+  width: 100%;
+  height: 230rpx;
+  padding: 40rpx;
+  display: flex;
+  background-color: #40E0D0;
+}
+
+.tou_image_size {
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  border-radius: 100%;
+}
+
+.nick_continer {
+  width: 100%;
+  height: 30rpx;
+  padding: 10rpx;
+  display: flex;
+  background-color: #40E0D0;
+}
+
+.btn {
+  font-size: 60rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  color:#ffff;
+  margin-left: 8%;
+  font-family:  KaiTi;
+}
+
+.btn1 {
+  font-size: 60rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  color: #444444;
+  color:#ffff;
+  font-family:  KaiTi;
+}
+
+.container2 {
+  border: solid 2rpx #AFEEEE;
+  width: 90%;
+  height: 980rpx;
+  margin-top: -180rpx;
+  margin-left: 5%;
+  background-color: #FFF;
+  border-radius: 30rpx;
+  padding-top: 90rpx;
+}
+
+.contain2_sigle_tip {
+  border-bottom: solid 3rpx #DCDCDC;
+  width: 90%;
+  height: 80rpx;
+  margin-left: 5%;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 20%;
+  height: 50rpx;
+  display: flex;
+  flex-grow: 1;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  color: #696969;
+}
+
+.tip_text {
+  width: 70%;
+  height: 50rpx;
+  display: flex;
+  flex-grow: 1;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  color: #444444;
+}
+
+.placeholderStyle {
+  color: #888888;
+  font-family: KaiTi;
+}
+
+.btn_box {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 100rpx;
+}
+
+.btn_style {
+  background-color: #009FCC;
+  text-align: center;
+  color: white;
+  font-size: 33rpx;
+
+}

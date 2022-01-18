@@ -1,10 +1,10 @@
 {
   "usingComponents": {
-    "custom-swiper": "../swiper/swiper"
+   
   },
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#40E0D0",
-    "navigationBarTitleText": "东软智行",
+    "navigationBarTitleText": "点赞记录",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true
   

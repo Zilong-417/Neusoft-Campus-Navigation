@@ -1,0 +1,36 @@
+<!--pages/myinfo/myinfo.wxml-->
+<view class="nick_continer">
+  <text class="btn">哈喽：</text>
+  <text class="btn1">{{info.nickName}}</text>
+</view>
+<view class="image_continer">
+  <image class="tou_image_size" src="{{info.avatarUrl}}"></image>
+</view>
+<block wx:for="{{student_info}}" wx:key="index">
+  <view class="container2">
+    <view class="contain2_sigle_tip">
+      <text class="left">姓名：</text>
+      <input type='text' class="tip_text" placeholder="{{item.sname}}" bindinput="getname"placeholder-class="placeholderStyle" ></input>
+    </view>
+    <view class="contain2_sigle_tip">
+      <text class="left">学号：</text>
+      <input class="tip_text" placeholder="{{item.snum}}" bindinput="getnum"placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="contain2_sigle_tip">
+      <text class="left">院系：</text>
+      <input class="tip_text" placeholder="{{item.scollege}}" bindinput="getcollege"placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="contain2_sigle_tip">
+      <text class="left">专业：</text>
+      <input class="tip_text" placeholder="{{item.sprofession}}" bindinput="getprofession"placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="contain2_sigle_tip">
+      <text class="left">班级：</text>
+      <input class="tip_text" placeholder="{{item.sclass}}" bindinput="getclass"placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="btn_box">
+      <button class="btn_style" bindtap="save_info" disabled="{{isdisable1}}"
+      style="background-color: #00cc1b">保存</button>
+    </view>
+  </view>
+</block>

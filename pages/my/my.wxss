@@ -1,1 +1,58 @@
 /* pages/my/my.wxss */
+page{
+  background-color: 	#E0FFFF;
+}
+.image_continer{
+    width: 100%;
+    height: 230rpx;
+    padding: 40rpx;
+    display: flex;
+    background-color:#40E0D0;
+}
+.tou_image_size{
+    width: 150rpx;
+    height: 150rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    margin-left: 10rpx;
+    display: flex;
+    border-radius: 100%;
+}
+.btn{
+    font-size: 45rpx;
+    margin-top: 30rpx;
+    margin-bottom: 20rpx;
+    margin-left: 20rpx;
+    padding: 25rpx;
+    display: flex;
+    color:	#696969;
+}
+.container2{
+  border: solid 2rpx 	#AFEEEE;
+  width: 90%;
+  height: 980rpx;
+  margin-top: -50rpx;
+  margin-left: 5%;
+  background-color: #FFF;
+  border-radius: 30rpx;
+}
+.contain2_sigle_tip{
+  border-bottom: solid 3rpx 	#DCDCDC;
+  width: 90%;
+  height: 80rpx;
+  margin-left: 5%;
+  display: flex;
+  margin-top: 40rpx;
+}
+.tip_image_size{
+  width: 70rpx;
+  height: 70rpx;
+  display: flex;
+}
+.tip_text{
+  font-size: 40rpx;
+  display: flex;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  color:  #696969;
+}

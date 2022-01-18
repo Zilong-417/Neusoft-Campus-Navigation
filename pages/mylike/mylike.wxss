@@ -1,14 +1,14 @@
-/* pages/comment/comment.wxss */
+/* pages/mylike/mylike.wxss */
 page {
   background-color: #E0FFFF;
 }
 
 .publish_image {
-  width: 100rpx;
-  height: 100rpx;
+  width: 90rpx;
+  height: 90rpx;
   position: fixed;
   bottom: 60rpx;
-  right: 60rpx;
+  right: 40rpx;
 }
 
 .tucao {
@@ -20,12 +20,10 @@ page {
 }
 
 .box{
-  width: 96%;
+  width: 100%;
   background-color: 	#F5FFFA;
-  border: solid 1rpx 		#33CCFF;
-  border-radius: 10rpx;
   padding-top: 30rpx;
-  margin: 2%;
+  border-bottom: 10rpx solid #EFEFEF;
 }
 
 .first_box {

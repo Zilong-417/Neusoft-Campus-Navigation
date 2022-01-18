@@ -1,6 +1,6 @@
 
 .swiper-block {
-  background:  	#FFFF;
+  background:  #E0FFFF;
   height: 320rpx;
   width: 100%;
 }

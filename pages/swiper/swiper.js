@@ -24,9 +24,4 @@ Component({
     }
   }
 });
-/*
 
-<view class="dots-box own-class">
-  <view class="dots {{currentIndex == index ? 'bg-333' : ''}}" wx: for="{{ imgUrls }}" wx:key="{{ index }}"></view>
-</view >
-*/

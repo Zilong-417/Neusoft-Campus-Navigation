@@ -1,46 +1,51 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/comment/comment",       
-    "pages/my/my"
-  ],
-  "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "tabBar": {
-    "color": "#8c8c8c",
-    "selectedColor": "#40E0D0",
-    "backgroundColor": "white",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath":"images/home.png",
-      "selectedIconPath":"images/home_selected.png"
-    }, 
-    {
-      "pagePath": "pages/comment/comment",      
-      "text": "吐槽",
-      "iconPath":"images/comment.png",
-      "selectedIconPath":"images/comment_selected.png"
-    },
-    {
-      "pagePath": "pages/my/my",      
-      "text": "我的",
-      "iconPath":"images/my.png",
-      "selectedIconPath":"images/my_selected.png"
-    }  
+    "pages": [
+        "pages/index/index",
+        "pages/comment/comment",
+        "pages/my/my",
+        "pages/publish/publish",
+        "pages/mylike/mylike",
+        "pages/mycomment/mycomment",
+        "pages/myinfo/myinfo",
+        "pages/mycollect/mycollect"
     ],
-    "position": "bottom"
-  } ,
-  "plugins": {
-    "routePlan": {
-    "version": "1.0.14",
-    "provider": "wx50b5593e81dd937a"
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#8c8c8c",
+        "selectedColor": "#40E0D0",
+        "backgroundColor": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/home.png",
+                "selectedIconPath": "images/home_selected.png"
+            },
+            {
+                "pagePath": "pages/comment/comment",
+                "text": "吐槽",
+                "iconPath": "images/comment.png",
+                "selectedIconPath": "images/comment_selected.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "images/my.png",
+                "selectedIconPath": "images/my_selected.png"
+            }
+        ],
+        "position": "bottom"
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.18",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序定位"
+        }
     }
-   },
-   "permission": {
-    "scope.userLocation": {
-    "desc": "你的位置信息将用于小程序定位"
-    }
-}
-  
 }
