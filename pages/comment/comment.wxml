@@ -9,7 +9,7 @@
       <block wx:for="{{mess_list}}" wx:key="index">
             <view class="box">
                   <view class="first_box">
-                        <view class="touxiang_box">
+                        <view class="touxiang_box" bindtap="go_info" data-text="{{item._openid}}">
                               <image class="touxiang" src="{{item.faceimg}}"></image>
                         </view>
                         <view class="person">
@@ -31,3 +31,32 @@
             </view>
       </block>
 </scroll-view>
+<!--  个人信息展示  -->
+<block wx:for="{{infolist}}" wx:for-item="item">
+      <view class="info_contain {{isInfoTrue?'isInfoShow':'isInfoHide'}}">
+            <view class='info_contain_in'>
+                  <image src='../../images/del_info.png' class='infoHide' bindtap='hideInfo'></image>
+                  <view class="contain2_sigle_tip">
+                        <text class="left">姓名：</text>
+                        <text class="tip_text">{{item.sname}}</text>
+                  </view>
+                  <view class="contain2_sigle_tip">
+                        <text class="left">学号：</text>
+                        <text class="tip_text">{{item.snum}}</text>
+                  </view>
+                  <view class="contain2_sigle_tip">
+                        <text class="left">院系：</text>
+                        <text class="tip_text">{{item.scollege}}</text>
+                  </view>
+                  <view class="contain2_sigle_tip">
+                        <text class="left">专业：</text>
+                        <text class="tip_text">{{item.sprofession}}</text>
+                  </view>
+                  <view class="contain2_sigle_tip">
+                        <text class="left">班级：</text>
+                        <text class="tip_text">{{item.sclass}}</text>
+                  </view>
+            </view>
+
+      </view>
+</block>

@@ -11,7 +11,6 @@ Page({
 
   },
   onLoad: function () {
-    //console.log(app.globalData.openid)
     var that = this
     //desc倒序 asc正序
     wx.cloud.database().collection('message').orderBy('time', 'desc').get({
@@ -26,6 +25,30 @@ Page({
           mess_list: list
         })
       }
+    })
+  },
+  //显示个人信息
+  go_info: function (res) {
+    var that=this
+    console.log(res.currentTarget.dataset.text)
+    wx.cloud.database().collection('myinfo').where({
+     _openid: res.currentTarget.dataset.text
+    }).get({
+      success(res) {
+        console.log(res.data)
+        var info_list = res.data
+        that.setData({
+          infolist: info_list,
+          isInfoTrue: true
+        })
+      }
+    })
+   
+  },
+  //关闭个人信息
+  hideInfo: function () {
+    this.setData({
+      isInfoTrue: false
     })
   },
   //跳转到发布信息页面
@@ -122,6 +145,6 @@ Page({
       })
     }
   }
-  
+
 
 })

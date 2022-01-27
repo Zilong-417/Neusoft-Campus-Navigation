@@ -126,3 +126,74 @@ page {
   color: #101010;
   word-break: break-all;
 }
+/* 个人信息显示 */
+.isInfoShow{
+  display: block;
+}
+.isInfoHide{
+  display: none;
+}
+.info_contain{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color:rgba(0, 0, 0, .5);
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.info_contain_in{
+  padding: 20rpx 0;
+  width: 80%;
+  background: #FFFFFF;
+  margin: 30% auto;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.infoHide{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.contain2_sigle_tip {
+  border-bottom: solid 3rpx #DCDCDC;
+  width: 90%;
+  height: 80rpx;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 30%;
+  height: 50rpx;
+  display: flex;
+  flex-grow: 1;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  color: #696969;
+}
+
+.tip_text {
+  width: 70%;
+  height: 50rpx;
+  display: flex;
+  flex-grow: 1;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  color: #444444;
+}
+
+/*  end  */
