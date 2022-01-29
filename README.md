@@ -23,6 +23,9 @@
 <hr>
 ● 用户可查看自己和他人的评论，并且可以点赞<br><br>
 <img src="https://github.com/Zilong-417/Neusoft-Campus-Navigation/blob/Neu/introduce_img/comment1.jpg" width="450px" alt="内容显示"><br>
+<hr>
+● 点击用户头像显示个人信息<br><br>
+<img src="https://github.com/Zilong-417/Neusoft-Campus-Navigation/blob/Neu/introduce_img/showinfo.jpg" width="450px" alt="内容显示"><br>
 
 ### (3) 我的页面
 ● 我的页面由点赞，吐槽，收藏点，个人信息四个功能模块构成<br><br>
