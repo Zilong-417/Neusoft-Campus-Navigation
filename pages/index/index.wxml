@@ -38,7 +38,11 @@
 <modal class="model" hidden="{{hidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalconfirm" bindcancel="modalcancel" title="前往此处" style="width:80%">
     <view class="modal_box" catchtap="mycollect" data-id="{{item._id}}">
         <view class="model-name">{{modalname}}</view>
-        <image class="image_size" data-text="{{modalname}}" src="../../images/selected.png"></image>
+        <view class="image_size">
+        <block wx:for="{{mycollectlist}}" wx:key="index">
+            <image class="image_size"  data-text="{{modalname}}" wx:if="{{item.iscollected==true&&item.addressname==modalname}}" src="../../images/collected.png"></image>
+        </block>
+    </view>
     </view>
     <view class="model-name">{{modaladdress}}</view>
 </modal>

@@ -520,12 +520,10 @@ Page({
         success(res) {
           console.log(res.data.collectlist)
           var action = res.data
-          // that.setData({
-          //    mycollectlist:res.data.collectlist
-          // })
           var tag = false //判断collectlist是否有某点收藏记录
           var index
           for (var i in action.collectlist) {
+            console.log(e)
             console.log(e.target.dataset.text)
             if ((action.collectlist[i].openid == app.globalData.openid) && (action.collectlist[i].addressname == e.target.dataset.text)) {
               tag = true
@@ -546,6 +544,7 @@ Page({
                   },
                   success(res) {
                     console.log(res)
+                   
                     wx.showToast({
                       title: '取消成功',
                     })
@@ -577,6 +576,9 @@ Page({
               }
             })
           }
+          that.setData({
+            mycollectlist: res.data.collectlist
+          })
         }
       })
     }
