@@ -483,7 +483,7 @@ Page({
     })
     //路径规划
     var plugin = requirePlugin('routePlan');
-    var key = 'VDUBZ-LMOEX-Y7J4V-TIIKL-U2H62-JLFGY'; //使用在腾讯位置服务申请的key
+    var key = ''; //使用在腾讯位置服务申请的key
     var referer = 'neu_living'; //调用插件的app的名称
     var themeColor = '#7B68EE'; //主题颜色
     var endPoint = that.data.endPoint;
